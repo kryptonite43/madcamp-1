@@ -26,14 +26,14 @@ class MainActivity : AppCompatActivity() {
             changeFragment(
                 when (item.itemId) {
                     R.id.contact -> {
-                        //bnv_main.itemIconTintList = ContextCompat.getColorStateList(this, R.color.purple_200)
-                        //bnv_main.itemTextColor = ContextCompat.getColorStateList(this, R.color.purple_200)
+                        bnv_main.itemIconTintList = ContextCompat.getColorStateList(this, R.color.color_1)
+                        bnv_main.itemTextColor = ContextCompat.getColorStateList(this, R.color.color_1)
                         ContactFragment()
                         // Respond to navigation item 1 click
                     }
                     R.id.gallery -> {
-                        //bnv_main.itemIconTintList = ContextCompat.getColorStateList(this, R.color.teal_200)
-                        //bnv_main.itemTextColor = ContextCompat.getColorStateList(this, R.color.teal_200)
+                        bnv_main.itemIconTintList = ContextCompat.getColorStateList(this, R.color.color_2)
+                        bnv_main.itemTextColor = ContextCompat.getColorStateList(this, R.color.color_2)
                         GalleryFragment()
                         // Respond to navigation item 2 click
                     }
