@@ -21,7 +21,6 @@ class RecyclerViewAdapter(private val context: Context): RecyclerView.Adapter<Re
         fun bind(item: phoneData) {
             nametxt.text = item.name
             phonetxt.text = item.phone
-
         }
     }
 
