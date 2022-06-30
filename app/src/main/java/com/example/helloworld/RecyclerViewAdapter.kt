@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerViewAdapter(private val context: Context): RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
+class RecyclerViewAdapter(): RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
 
     var datalist = mutableListOf<phoneData>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.listview_item,parent,false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.listview_item,parent,false)
         return ViewHolder(view)
     }
     inner class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
