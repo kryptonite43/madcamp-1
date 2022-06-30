@@ -3,15 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:textAlignment="center"
-    tools:context=".ContactFragment">
+    tools:context=".GalleryFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="100dp"
-        android:text="contact_fragment"
+        android:text="gallery_fragment"
         android:textAlignment="center"
         android:textSize="30sp" />
 
