@@ -8,6 +8,11 @@
         <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/listview_item.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/menu/menu.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.12056737588652482" />
+        <entry key="app/src/main/res/layout/fragment_contact.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.13880445795339413" />
+        <entry key="app/src/main/res/layout/fragment_last.xml" value="0.146403242147923" />
+        <entry key="app/src/main/res/layout/listview_item.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.30104166666666665" />
       </map>
     </option>
   </component>
