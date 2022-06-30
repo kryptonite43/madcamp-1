@@ -32,14 +32,14 @@ class MainActivity : AppCompatActivity() {
 
                     }
                     R.id.gallery -> {
-                        bnv_main.itemIconTintList = ContextCompat.getColorStateList(this, R.color.color_2)
-                        bnv_main.itemTextColor = ContextCompat.getColorStateList(this, R.color.color_2)
+//                        bnv_main.itemIconTintList = ContextCompat.getColorStateList(this, R.color.color_2)
+//                        bnv_main.itemTextColor = ContextCompat.getColorStateList(this, R.color.color_2)
                         GalleryFragment()
 
                     }
                     else -> {
-                        //bnv_main.itemIconTintList = ContextCompat.getColorStateList(this, R.color.purple_700)
-                        //bnv_main.itemTextColor = ContextCompat.getColorStateList(this, R.color.purple_700)
+//                        bnv_main.itemIconTintList = ContextCompat.getColorStateList(this, R.color.color_3)
+//                        bnv_main.itemTextColor = ContextCompat.getColorStateList(this, R.color.color_3)
                         LastFragment()
 
                     }
