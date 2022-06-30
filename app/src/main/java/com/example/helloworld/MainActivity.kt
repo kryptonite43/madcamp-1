@@ -29,19 +29,19 @@ class MainActivity : AppCompatActivity() {
                         bnv_main.itemIconTintList = ContextCompat.getColorStateList(this, R.color.color_1)
                         bnv_main.itemTextColor = ContextCompat.getColorStateList(this, R.color.color_1)
                         ContactFragment()
-                        // Respond to navigation item 1 click
+
                     }
                     R.id.gallery -> {
 //                        bnv_main.itemIconTintList = ContextCompat.getColorStateList(this, R.color.color_2)
 //                        bnv_main.itemTextColor = ContextCompat.getColorStateList(this, R.color.color_2)
                         GalleryFragment()
-                        // Respond to navigation item 2 click
+
                     }
                     else -> {
 //                        bnv_main.itemIconTintList = ContextCompat.getColorStateList(this, R.color.color_3)
 //                        bnv_main.itemTextColor = ContextCompat.getColorStateList(this, R.color.color_3)
                         LastFragment()
-                        // Respond to navigation item 3 click
+
                     }
                 }
             )
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
             .commit()
     }
 //    private fun initRecycler() {
-//        recyclerViewAdapter = RecyclerViewAdapter(this)
+//        recyclerViewAdapter = RecyclerViewAdapter()
 //        val recview = findViewById<RecyclerView>(R.id.recyclerlist)
 //        recview.adapter = recyclerViewAdapter
 //        datalist.apply {
