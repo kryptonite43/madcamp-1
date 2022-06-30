@@ -15,8 +15,8 @@ class RecyclerViewAdapter(): RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder
         return ViewHolder(view)
     }
     inner class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
-        private val nametxt : TextView = itemView.findViewById(R.id.name)
-        private val phonetxt: TextView = itemView.findViewById(R.id.phone)
+        private val nametxt : TextView = itemView.findViewById(R.id.nameText)
+        private val phonetxt: TextView = itemView.findViewById(R.id.phoneText)
 
         fun bind(item: phoneData) {
             nametxt.text = item.name
