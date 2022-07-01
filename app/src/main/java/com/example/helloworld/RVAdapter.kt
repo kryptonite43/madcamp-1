@@ -1,5 +1,6 @@
 package com.example.helloworld
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,13 +10,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import org.w3c.dom.Text
 
-class RVAdapter(var List : MutableList<GalleryContents>):RecyclerView.Adapter<RVAdapter.ViewHolder>() {
+class RVAdapter(val context : Context, var List : MutableList<GalleryContents>):RecyclerView.Adapter<RVAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RVAdapter.ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.rv_item, parent, false)
 
         return ViewHolder(v)
     }
-
     override fun onBindViewHolder(holder: RVAdapter.ViewHolder, position: Int) {
         holder.bindItems(List[position])
     }
@@ -28,6 +28,9 @@ class RVAdapter(var List : MutableList<GalleryContents>):RecyclerView.Adapter<RV
             val rv_img = itemView.findViewById<ImageView>(R.id.rvImageArea)
             val rv_text = itemView.findViewById<TextView>(R.id.rvTextArea)
             rv_text.text= item.titleText
+            Glide.with(context)
+                .load(item.ImageUrl)
+                .into(rv_img)
 
         }
     }
