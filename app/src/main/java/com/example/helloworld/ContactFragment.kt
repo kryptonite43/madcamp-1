@@ -7,41 +7,37 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.helloworld.databinding.ActivityMainBinding
+import com.google.gson.Gson
+import java.io.IOException
 
 
 class ContactFragment : Fragment() {
 
     lateinit var recyclerViewAdapter: RecyclerViewAdapter
-    val datalist = mutableListOf<phoneData>()
 
+    lateinit var testdata : TelData
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
     private fun initRecycler() {
-        recyclerViewAdapter = RecyclerViewAdapter()
+        recyclerViewAdapter = RecyclerViewAdapter(testdata!!)
         val recview = getView()?.findViewById<RecyclerView>(R.id.recyclerlist)
         recview?.adapter = recyclerViewAdapter
+    }
 
-        datalist.apply {
-            add(phoneData(name="mary", phone="010-0000-0000"))
-            add(phoneData(name="john", phone="010-1223-0000"))
-            add(phoneData(name="jenny", phone="010-0000-4342"))
-            add(phoneData(name="mary", phone="010-0000-0000"))
-            add(phoneData(name="john", phone="010-1223-0000"))
-            add(phoneData(name="jenny", phone="010-0000-4342"))
-            add(phoneData(name="mary", phone="010-0000-0000"))
-            add(phoneData(name="john", phone="010-1223-0000"))
-            add(phoneData(name="jenny", phone="010-0000-4342"))
-            add(phoneData(name="mary", phone="010-0000-0000"))
-            add(phoneData(name="john", phone="010-1223-0000"))
-            add(phoneData(name="jenny", phone="010-0000-4342"))
-            add(phoneData(name="mary", phone="010-0000-0000"))
-            add(phoneData(name="john", phone="010-1223-0000"))
-            add(phoneData(name="jenny", phone="010-0000-4342"))
-
-            recyclerViewAdapter.datalist = datalist
-            recyclerViewAdapter.notifyDataSetChanged()
+    private fun getJsonData(filename: String): TelData? {
+        val assetManager = resources.assets
+        var result: TelData? = null
+        try {
+            val inputStream = assetManager.open(filename)
+            val reader = inputStream.bufferedReader()
+            val gson = Gson()
+            result = gson.fromJson(reader, TelData::class.java)
+        } catch (e: IOException) {
+            e.printStackTrace()
         }
+        return result
     }
 
     override fun onCreateView(
@@ -49,6 +45,7 @@ class ContactFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        testdata = getJsonData("jsons/data.json")!!
         return inflater.inflate(R.layout.fragment_contact, container, false)
     }
 
