@@ -16,7 +16,16 @@ class RecyclerViewAdapter(private val dataset: TelData): RecyclerView.Adapter<Re
         val view = LayoutInflater.from(parent.context).inflate(R.layout.listview_item,parent,false)
         return ViewHolder(view)
     }
-    class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
+
+    interface OnItemClickListener{
+        fun onItemClick(v:View, data: phoneData, pos : Int)
+    }
+    private var listener : OnItemClickListener? = null
+    fun setOnItemClickListener(listener : OnItemClickListener) {
+        this.listener = listener
+    }
+
+    inner class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
         private val photoImageView : ImageView = itemView.findViewById(R.id.photo)
         private val nametxt : TextView = itemView.findViewById(R.id.nameText)
         private val phonetxt: TextView = itemView.findViewById(R.id.phoneText)
@@ -25,6 +34,14 @@ class RecyclerViewAdapter(private val dataset: TelData): RecyclerView.Adapter<Re
             Glide.with(itemView).load(item.photo).into(photoImageView)
             nametxt.text = item.name
             phonetxt.text = item.phone
+
+            val pos = adapterPosition
+            if(pos!= RecyclerView.NO_POSITION)
+            {
+                itemView.setOnClickListener {
+                    listener?.onItemClick(itemView,item,pos)
+                }
+            }
         }
     }
 

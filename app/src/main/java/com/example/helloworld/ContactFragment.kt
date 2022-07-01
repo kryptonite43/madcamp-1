@@ -1,13 +1,15 @@
 package com.example.helloworld
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.helloworld.databinding.ActivityMainBinding
+
 import com.google.gson.Gson
 import java.io.IOException
 
@@ -24,6 +26,11 @@ class ContactFragment : Fragment() {
         recyclerViewAdapter = RecyclerViewAdapter(testdata!!)
         val recview = getView()?.findViewById<RecyclerView>(R.id.recyclerlist)
         recview?.adapter = recyclerViewAdapter
+        recyclerViewAdapter.setOnItemClickListener(object : RecyclerViewAdapter.OnItemClickListener{
+            override fun onItemClick(v: View, data: phoneData, pos : Int) {
+                Log.i(data.name,"온클릭")
+            }
+        })
     }
 
     private fun getJsonData(filename: String): TelData? {
@@ -52,6 +59,7 @@ class ContactFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initRecycler()
+
     }
 
 
