@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="몰입캠프앱"
+        android:text="강아지가 좋아 "
         android:textSize="40dp"
         android:textColor="#ff7f00"
         android:textStyle="bold"
