@@ -108,6 +108,69 @@ class GalleryFragment : Fragment() {
                 "저먼 셰퍼드"
             )
         )
+        items.add(
+            GalleryContents(
+                "https://ko.wikipedia.org/wiki/진돗개",
+                "https://upload.wikimedia.org/wikipedia/commons/e/ea/Korean_Jindo_Dog.jpg",
+                "진돗개"
+            )
+        )
+        items.add(
+            GalleryContents(
+                "https://ko.wikipedia.org/wiki/슈나우저",
+                "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgUFhYYGRgaGhkeHBwcGhkcHB0cHRkaHB4cGh0eIy4nHB4rHxocJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHhERGDQhGiExMTQ0NDE0MTQxMTE0MTExNDo0NDExNDQ/NDQxND8/MT80NDExMTQ0NDExMTExMTExMf/AABEIARQAtgMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQcDBAYCAQj/xAA9EAABAwIDBQUGBAYBBQEAAAABAAIRAyEEEjEFBkFRYSJxgZGhBxMyscHwFEJS0WKCkrLh8XIVI0NjoiT/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/8QAGxEBAQADAQEBAAAAAAAAAAAAAAECETEhEkH/2gAMAwEAAhEDEQA/ALmREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQERfCUH1FX+J9q2Ba97MtZxYSBFMdogkENk8xqYXL7X9r9Sowsw2H928mM73BxA5taABm7yQOqDr99vaFRwJNJo95iAAclw0A/qdwMXgT4KC2Z7Vi97BVohrXSXZXSWgCZv1VOVXue9z3EuJcSXG5JJuSpPZeEeXZ2NLrEEmQL8reiLH6hpVA5oc0yCAQeYIkFZFWe6+9FLBYSnTxGIL6gPwim/stJs0GI7Iv4rb297TMKylOHcalRxaAMpbAntE5hqBPA3hDSV3l34oYJ5pva8vy5mjKQHXvDjbST4Ll8D7W2OdlfSiw0eIGskkj0jz489vPvpTx+HyVMOBUa8mnUzgFl7AjL2pFiLcDqFwGIaB2muyuA4Tfp3IafqHYm26GLZ7yg9rxoYmx4gyAfRSi/LG628tXBYhtZjjlkZ22hzJ7TbgweoV+7rb74XHACm7JVvNJ5Afbi3g4d3jCI6pERAREQEREBERAREQEREBQG+taqzA4h1EAvFN1jM5Yh2WPzRop9YMRQD2OY4S1wIIPEEIPyUx5DuR68VuO0JJGaIHITqVP71bj4vBuc80y+kCSKjJc0NkwHD4mkDUkR1XLl8wD4Irc2Zgi982DRGpaJnT4iAV2mFxD2AMeGgAQLhcuX+4YIIDyLus4sB/K3keZ8FCVNoPBkOJPMqK7feqsTTGVrde07UxFo/dcKysQbzrxWahtV4BDjmBM3+ixMbJB4fRBt0CS6ImeKlf+kNPxOIPmtPDdiQRdot1EGPX5rTxu0amazoHDxCKkau7xLSWGSBMfm8B+bwUYxpiWmIM2sWubxHFpWfA7XeDcz98FlxWImqXzIeBqBwEX5nqqy6DcffbFUMS0Oe+u2q5jHNe9znXOVpY5xJBE6aFfosKofZbuO5r2Y6uIiTSaQZJIIzuBAiJt5q3kR9REQEREBERAREQEREBERB5c2e5Up7Vt2mYeqzE0qbWMeCHBuVrc4FuyOJ6CLdVdi4z2i4BtWhBZmLQSHFwYyn/E46uJ0DRM8uKLH54fQe/l3Svgw5YQ6JIvpIkHQjiFuVcMQ/h/LPottjB8IEm08T3WUWxpswgqAusDJJa0WEkm3IdFpElhc3vj0+i7fZWx6mUshjcxkl0ki36WgxbmVlxe5jGML31m99xfxTY5fB4kPDcwEkFpHSRCx4+i1stytdOWHZXBzY4C8Xm8g6cF0uxdgYeq4tNRgcB2e3q7v5KSxW6T4uZLfzASY5Q0EpvRpWtXDlpVu+x/d+jXY7EVqWcseBTJILcwAJOXXOLXNocFxOL2dBIs6PvQ3Csn2O4pwp1KJHZLi5pFwHNyhwP6SQWkA65SiLQAX1EVQREQEREBERAREQEREBERAUJvJsZuJZDyYbJAiRMaxxsptfCEH5y23gXtqmmG6WFrxzXSbmbstcS947LNebnm2UHnK6Hb2AYMY7UucQ954BujBPOzzHdwhSWwKAYxjI0c4nqe0R52uueV146SbiVw2zmhoIYGjgI+/NUt7RhWGLqgNdkblDQJjLlE6dZV24nF5WzP3C4ne/AUMSO08seL5m6m1wRpEfJWWJqqeY9xIDGkukfDMjyV8bmMdUwVF1QduCCTqQ1xDSeuWFWOxd3aIqS+s8ibBoyyOTjwMSrbwmLYGNDIDBEAaQplksxqI3j3abVBcwZajbt4h38LuYOkrc9mdGmynUysy1C6XgsIIMkAB0nM0eEXUhiaw+MG2ncdCPv6r5sggVjENc9uYdXNs8HnIAKuOX4mU8dYi8jReltgREQEREBERAREQEREBERAREQcLvQwNxbABAex0ni58gtJ7m0yJWzRrgMzHSCfD/AEorfnFPONp0WAZhhy+Y/N7yGjwAf/UvtJ5qUIiCbHxvI6alcsuuuPGni8Y+s7Kzn4BR+K3ZfVBJc6OJPE8bcAuowuEawNAES4zz0lbGIrhoA5t+c/ssya9at344GnuQAczXnpFukKRwtCrh2lpBLB6DkpzAYwPBbxBPodQtms4kEGzoOUxZw5FL6Txo4bHAiOBN/Fpv6BbgrBj6BB7QqGT07LHepCgqVBwc7sx04azbwUrs7CGtUazgBJMm15IHeW+iY72Za0sIFfVjpAhoB1AErIu7gIiICIiAiIgIiICIiAiIgIi5bf8A25+FwjnNMVH9hnMEjtO8Gye+EFS+0DeR7toVKjHCKRNJkcmiHE8+25x8AtndLfMvq06FSIc9jWkcLwAe+VX+PfmcT18fFYMNiCx7XjVrgR3gys1ren6JfUEAyJa71BE/3BecXQLojw8CSPRyqjA79Oawse0uBe98g3GabdR+/RTWxvaWwUgzEMcXtsHMFnDmRwcsXFqZOjrYBzXF7ZF1u4bEujKb/Qrh8b7RJpe7DA98ua512tcwtcA4cWugiRwMqGw++GJc/MHAC/ZAsezA6iNdU+V+loYnHUmszueBMybXIvlHUrFs3fnA0KsObUEtaM4AcxvSAZ7yAVVtfFvqMyPNpLgOTpdfvusMdiDz8QefctTHTNu36W2dtahiBmo1WVB/C4EjvGo8Vvr8sYLGvpPD6b3U3g2c0kEfuOitDdP2nyRSxsA6Cs0QP52j+4eS1tnS10WKlVa4BzSC0gEEXBB0IKyqoIiICIiAiIgIiICIiAqH9q+2xWxnu2mW0Rk6Zpl5HjA/lVx7ybTGGw1WudWMJb1cbNH9RC/MVaqXuc4kkm5J1JPE9ZUWNOtrPNYXMWd5mVgBRXhCF6eAvuREGC63qDQNNfmtNjLrZoUi654ckWJE1ALHxHELP7nsniofGPIfPcpnDOlojiPJFaFXmjjaVuOpA36Ax6H5LWLIlveg67cffh+CPu3S+gTds9pnMsn+3RXpgcaysxtWm4OY8AtI4g/Xovys3VWR7Kt6jRqjB1D/ANuo7sEn4Xnh3O0745ozV1oiKoIiICIiAiIgIiIK+9sbiME0AwDUEjn2SR8lRZBVze2LEF34fDgST7x57gA0fM+SqStRgqVqcRtQFa8LaxLLry2nNkRhy/VZGUSbzC9sZBIK2zTtIvpZFR1dkHn1Wzg5AK2MThTlFoAv9AstKlHZ5g+aEadRtxot2hVyC3NYH0iPBZ6Qkdfmit9jb+Fv2UfmklbNJ5mRoFgLYc61rkINY6r6x5aQQYIIII1BBsQgXkoj9J7mbYOLwlOs6MxEOji5pyk+k+K6BVn7FsXmw9WkT8Dw4Do9t/CWqzEiUREVQREQEREBERBWHtDw+fG09TloC3KXvueS4vFbKF3ankrF3xpNbic5/NSb6Ofp1URSwrS1ziNRb6fv5LN61OKsxGGOcyO/v+wvpwkTIub93FdjtDZzWtLjz8TwUJUaXS2NT9gc1VaG0cAOw5us38phZMNTy9qzgSBOoaOPipDH0QGhs/lE9DdbezmNbSItlANzzdJ+/BBiOz2vaIMgEk/fcvr9lAxDb3/yvm6pPvCH/B2rnu/cBdjhmsfUcGi2UeqDhq2zJbYdoW8lrVtkuaA64Vjs2c0kxAebgHmCf9LV2qxpaQ5oEa8x4rIrOtUcMwIuNf3Xh5kTzaNPIrd2owNrOg2PDw+S0a1iG/cLQ8UGWkrJiacAFe6VEkgD/S2se3sZR3+SDrfY5jg3Fvpn/wAlMx/yaQ4R4Zld6/OG4FfJj8Mf/YGn+YFv1X6PSM0REVQREQEREBERBWm/NUvxzKejWsbPiXOJPQD5rNlGQPNgb+BE/KE3+wUVvfR8TMvpHyJ8lG7bruyMYPhDWg9XZQAO60+SzWpxE7Qr+9JcLMbOU841d5/RauGwgpsNd+pMMaev36LabGcUzZoGnJrQJJ6zK1tuY0SGaRNuUiw8ARKioHHPvLj8RkxqYsAPEnzUmyoxzQA2bTHdIjvso/GMylsi5gAHWBxP0X3YoIqHSJAA5knTxQdLgcIIIy9shpjkCR6wVMYKiGVwBoQJ8Jn5gLwzFMa+u+3Yexg/+QR6Eo3Ey6vXI+AQ3qcxI8zl81oS+Iogsztu4dodeY++SgtvV4piuBmbo8a9k2MjjB+azbKqvFBjnTLiAPGT/lbTdnNqF7CbHM145B4kHwIWRVu1KMvzMPZIDmmeuiwhl78olb7aMNcw6scbdQeC0XNkfKPkVdmm5hqYgz4LVxVTVusH5qb2Rs0vaDM20UHtPDObVIA/yZVGTd14biaDiYAq0yTy7bV+nV+Y9nYcuexmQl5e2wmbkaRdfpik2AByAHM6c0jNZURFUEREBERARFhxFUNY5x0AJ9EHA7+7Ta53uhoz4j1gzHcM3j3KE2vUzYYuFnNyu9f8qI21jnuxLmvGUu4EQRmHZDh+U2Nut7lY9nbX/wC2W1LtBcx/Nsnsu7oMeE8Fmtse0MYCfe84tz436TwUDVxRLszjJJmTxkzPndZsbRLGkZszS4BpGhGs9LKL9403eYDbDUybDQKVUyx7YdVcZDeJ1c/kOQAWDZby5wqRDRUYB/E4kT5D6KGxuLc8NY3STA0vpopBuIAeykwyykQJGjnkhz3/ANVh0aERPuxRZh6jybvqPI6l3ZAjkG5z5c1K7K2k1zGUye1UqZjPJmWR5gFcJi8S97iHHSQBoBe4AUjsTF5S2bkBxB/Sbgnx7IA4mEFkfi2ueQ0AsoljG8jUiPISJP8ACVr4bEPZiarSbOYS09BlifVcw/aoaz8MwwQyx45iQHuJ/UWud69Fv4Xach9Q/E2nkHWDln0B8Voc+5ha4uP5nu/36Lz+EyvkAFp4dRw+awYqqXNdGocSPBbWHcKjC09CDpwsfRZV0279MEBoH+OhXOb10SyoeU6hdHuViMwexxl7Lh3FwiYPUGQo7eeqHEuI1gnreLjhdWM3rL7OMJ73HUncGNc88QYbH9xCvNU57H74qqTwpmI0u9s/JXGrEr6iIqgiIgIiIC8ubK9Igof2k4QUcYcrr1G53Xl2bM4SeUxouWq4wz7xkSQA9v6otPiPEFdp7acEW4hlUaOpjza4g/Mearqm4mRxUbbDcR+UFzWzJbMiVq4p8/T6lbTKU/eizt2eX8LhZpEY1nZBmNViwzodynTv4SpZuyXuGVrXue4jI0CZF5jmZ6c+Sn9kez+viAQ0ZHMdBzWDjFyCf06HW9oQcviXyZHxEifLVfcLWcJa0kBzmlx5idJ1AC2MXs19J72PHbYSDykED5r3ToZYtqfmhpjoUSHyNGlw8w5bgxQazLxdrHKZPyasVQuaHCLEg+ABgeq0aDu0HO1Jsitw1CA+PuQFnwDi1knr87fNatFnbGb4Qb9baKR2ZhvxNalh2ktFSoGkjg2dR4SUV0G77Q14e0jtsB7z2v8ASgd5cW41HtOlo7vsrvN4NmNw+IDWCGkNcJjl2gOkyfFcJvPh/wD9BJ0MHwhWRi9dN7I8UW4otiQ+m4TyILXfQ+aukKpPY9g5rVqn6GNaO97ifkz1VtqxK+oiKoIiICIiAiIgqb20Nl1AcMlT+5irD8HZj+ZAd+/qCrf9rrGllIfnOb+kR9Sq52VSzugaNa50dQMojwhZvW5xL7F2L7xpdAkRPLl8x6qVZsOCOHAfspTdBgazJza0OPJ2UH771P1cHJPMeqlVm2HslraVMOaCWOJa4agkkwDq03hdLTaIsIBuo/Y9UOaRyOnh+8qSYIAHRWM1xO/G7LHj8QxsPmHR+afzHrNvFcG3ZTWWvLjaBICu/ENBaQ7Qi6r7HNZRY9x45o5xPDqTZKuNVrtmmAMjbn8x+aicJhXOfl4kGPD7K7PD7Fc8OrP7LQM0c5Nh0CgMQ91Ml0RIMdwMfMqRWjjiGucAdCPqF0Ps7YP+oYflL5/ocR6gLl64dZ8dD6rpfZ5Q95jqNyIkyNQ5jHQfUoqy9/sMS6m+NAR6rhdu7NL2h0aAeitXeNmak2RJzDwPFQ7MFmYWgcOS0xH32ZbM9zhc51qOnS4DeyAefE+K7RcHuPtGoyq/B1uOZzOkG7e4i47iu8SJRERVBERAREQEREFbe0rDAvY9zSW5YAzQXGZgcmgepXI4DCF7h2cr6j9QIAadQBwACsfe/Z5qvY6M0FjQCLXfmNza8R3KJ2bgmPcTGV7iT0Eu0A7gs1ucSOyNmtpDI0zY5jxJkn6wpWkJHcV52Y3K0iLkXP0C9VaWW7SY+9VkbWzqTZOsgyO791KqK2fWLzGhHT6ypAyBz71qcS9RO3cUWiAARoSRIHdwlc1VwHv3MYdC8F3RrLtb4mCVIbdxDg8ZmkuI7LRGk9TYcZKx0nljdb3ny/ypa1IjdvYxjaVRrQA2Q0E8b3ceWq4fGszMh4vleD5iR/yBg9xXYVMGyr7xr3QxrZjnqTHl6rnhhzUAn/i71yuPK1p6KSq5fBMLmRlmBfpEgHuuPNdVuTsp7aoqsd8NVjXCPylpcDPJ3w+PRRLNnmg/tg5HSC4XgGwcPIeSszcrBsYxwDs57OV40eyA5k8nNIi/LqqV0O0q0Oa0Aki/S8+ZWvXxGQaDr/heatUOcZNzJ7gOXovGJgNlxA5notMuS2XXc7aoI008Mqs9VngCDjqNVtgXlsHUg2BPXj4qzFImX49IiLTIiIgIiIC+Er6sdR0AnkCg53buKLgGsc0EHq4+UQPGdVoUac1ATPZBJJAEmCAMo4RPkpeptYunKzpcjgofEY+mJEmSZc4G5JHTS1uixk3HQU4sANJ/2ei+Pjjw8oWnSxwDGluUlxgCdBzK18c+5Oa5DYA0gTMczJCzKJfZ9IGXDUcQt7EVcjHOPAEqCpbWbh8KatWRBdYAkmBNh4Knt4N/q+IcQLMkw3pyW5xL13uGrPr4qs57p92GwBdrZJAbPG5nqQpw4VpAAu4kyeQAmfGy5vcbEMfSLGMPYDC9/Bz3AmOdphT1LEEBzWwOE8LdVmtRzeOpHOQ2TMTrcnQdBK3XbLe1gqHsuYOFrTcW1upOnj6TGZXAF5PAcQ630TGYtri6R2SBPfYacP8AKyrS2ds8VWkObnIMx3RmFuq6mns+nRY73bQzMOAaD5jXvWnszDyGuacrhY8M32LLe2ljMrY4ka2nuK3GbUNhWjMTmAgAXPXRaG3nvIc1t4F+XE/NaWL21SoEy8Zz53+S037S96Dlc3reSptWtu1jGfiGioYmoCHHgcot5hXAFT+x8ADXD3mHB7Cy0g9q+bpCtyjTDWgAQBoOS1GcmVERaZEREBERAWDGVMrHHos68uaDY3QVtvBtk0WEDXmAuY2btEsa6qXF73fDLrAkEEHibdI4q1do7sYetIcHCf0ujyUfhtw8NTcHMdUBBJuWmZEQZbcLPy19OE2HtSpVe4hwyic0ggiNBJtqQF09LF+9AAh0QMzTMaadZCk2biUAXEVKsOMlssLe7KWwpLZu7NCgczM021Np5wICz8r9N1+DbUpBj2h3Z/M0G8RMEWKpXam4GJZVflovqNkwWEQRwgEyIV8ot6Z2qTcyk/DMqNqgtlwdldEtAEdozpZNu7wsZIDpjh+y7Pejd04iHMy5hYh0gHjeFX2N3GxsPBaHlxEOBYQBN4baIFuKzcWpl459m2nve6HAuF2tixb06rqMLtYZgye05oc3NoW6mI7lr4PcWsxuf3D3VJsDlgDTmI0B8Oq2aO5GNc+4yta52UucwkAnQQVLisydnsXFElocB4m0LLvngKj8Ofw7C5+YSAYJbEFedhbvVKWU1HNMGY1v8oXUrUnnrNvvihDutii9z306gNrFhjXTuTEbt4hlRpZTedeHGJ15Sr8RXSbVhulsbElxdVa4dXc+HgrKpNIaAbkALIvqSaLdiIiqCIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiD/9k=",
+                "슈나우저"
+            )
+        )
+        items.add(
+            GalleryContents(
+                "https://ko.wikipedia.org/wiki/웰시_코기",
+                "https://cdn.onews.tv/news/photo/202108/86366_92057_597.jpg",
+                "웰시코기"
+            )
+        )
+        items.add(
+            GalleryContents(
+                "https://ko.wikipedia.org/wiki/프렌치_불도그",
+                "https://www.timeforum.co.kr/files/attach/images/77/879/241/013/d7bf0371b496ebd4683c485dce559c77.jpg",
+                "프렌치 불도그"
+            )
+        )
+        items.add(
+            GalleryContents(
+                "https://ko.wikipedia.org/wiki/도베르만_핀셔",
+                "https://mblogthumb-phinf.pstatic.net/MjAxODA4MTVfNzEg/MDAxNTM0MzAwMjY3NTE4.-EFgOel_h23LKmL4pGB0MaLrpQB6tGx-obSu4TafArog.H9Q6104kC3V6Vq2ITVLDWJFx6oh-TO21LCvwb-D6AK4g.JPEG.senom91/image_4145279431534297872182.jpg?type=w800",
+                "도베르만 핀셔"
+            )
+        )
+        items.add(
+            GalleryContents(
+                "https://ko.wikipedia.org/wiki/시베리안_허스키",
+                "https://t2.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/4arX/image/-52PPw7zeFTuQOVgFa4WcxnQLCU.jpg",
+                "시베리안 허스키"
+            )
+        )
+        items.add(
+            GalleryContents(
+                "https://ko.wikipedia.org/wiki/비글",
+                "https://mblogthumb-phinf.pstatic.net/MjAxOTA4MjlfMTg2/MDAxNTY3MDc5MzQ2MDY0.IGiXVVBY__vmY2ldI8aRrRb3vZWM5VOZf2-v1KKRMZYg.09z3mlXqmvdf4sJ0YrCh6012mXDIe94Z2X7iJTixNdEg.PNG.vet6390/비글의_특징.PNG?type=w800",
+                "비글"
+            )
+        )
+        items.add(
+            GalleryContents(
+                "https://ko.wikipedia.org/wiki/알래스칸_맬러뮤트",
+                "https://t1.daumcdn.net/cfile/blog/247C2937533E718010",
+                "알래스칸 말라뮤트"
+            )
+        )
+        items.add(
+            GalleryContents(
+                "https://ko.wikipedia.org/wiki/코커_스패니얼",
+                "https://mblogthumb-phinf.pstatic.net/MjAyMDA1MTJfMTQ2/MDAxNTg5MjcwMjc4NjMw.rpoa82gyJT5m2c8nF-bQaJC6t5a352Cqmo2KuGD1s9Qg.xq0gYhTXhmTzfSJkuvo0ATsAoss-lW6Llxxug1bXqz4g.PNG.kikimip/pngwing.com.png?type=w800",
+                "코커 스패니얼"
+            )
+        )
 
         recyclerView?.adapter = RVAdapter
         RVAdapter.itemClick = object : RVAdapter.ItemClick{

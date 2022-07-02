@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="강아지가 좋아 "
+        android:text="프로듀스21: 강아지편 "
         android:textSize="40dp"
         android:textColor="#ff7f00"
         android:textStyle="bold"
