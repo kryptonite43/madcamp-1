@@ -13,15 +13,53 @@
         android:id="@+id/recyclerlist"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="80dp"
         android:orientation="vertical"
+        app:layout_goneMarginBottom="100dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/listview_item" />
+        tools:listitem="@layout/listview_item">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonframe"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerlist"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_gravity="center"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal">
 
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/addContact"
+                android:layout_height="60dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:text="등록"
+                android:textSize="20sp"
+                >
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:id="@+id/delContact"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:text="삭제"
+                android:textSize="20sp"
+               >
+            </Button>
+        </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
