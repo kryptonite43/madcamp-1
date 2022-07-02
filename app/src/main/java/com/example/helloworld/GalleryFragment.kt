@@ -1,6 +1,7 @@
 package com.example.helloworld
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -109,6 +110,14 @@ class GalleryFragment : Fragment() {
         )
 
         recyclerView?.adapter = RVAdapter
+        RVAdapter.itemClick = object : RVAdapter.ItemClick{
+            override fun onClick(view: View, position: Int) {
+                val intent = Intent(activity, GalleryViewActivity::class.java)
+                intent.putExtra("url",items[position].url)
+                startActivity(intent)
+            }
+
+        }
         recyclerView?.layoutManager = GridLayoutManager(activity, 2)
         RVAdapter.notifyDataSetChanged()
     }
