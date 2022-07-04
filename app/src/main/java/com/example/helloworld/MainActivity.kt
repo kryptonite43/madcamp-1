@@ -10,8 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
-//    lateinit var recyclerViewAdapter: RecyclerViewAdapter
-//    val datalist = mutableListOf<phoneData>()
+
     private val fl: FrameLayout by lazy {
         findViewById(R.id.fl_con)
     }
@@ -19,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //initRecycler()
+
         val bnv_main = findViewById<BottomNavigationView>(R.id.bnv_main)
 
         bnv_main.setOnItemSelectedListener { item ->
@@ -57,29 +56,5 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.fl_con, fragment)
             .commit()
     }
-//    private fun initRecycler() {
-//        recyclerViewAdapter = RecyclerViewAdapter()
-//        val recview = findViewById<RecyclerView>(R.id.recyclerlist)
-//        recview.adapter = recyclerViewAdapter
-//        datalist.apply {
-//            add(phoneData(name="mary", phone="010-0000-0000"))
-//            add(phoneData(name="john", phone="010-1223-0000"))
-//            add(phoneData(name="jenny", phone="010-0000-4342"))
-//            add(phoneData(name="mary", phone="010-0000-0000"))
-//            add(phoneData(name="john", phone="010-1223-0000"))
-//            add(phoneData(name="jenny", phone="010-0000-4342"))
-//            add(phoneData(name="mary", phone="010-0000-0000"))
-//            add(phoneData(name="john", phone="010-1223-0000"))
-//            add(phoneData(name="jenny", phone="010-0000-4342"))
-//            add(phoneData(name="mary", phone="010-0000-0000"))
-//            add(phoneData(name="john", phone="010-1223-0000"))
-//            add(phoneData(name="jenny", phone="010-0000-4342"))
-//            add(phoneData(name="mary", phone="010-0000-0000"))
-//            add(phoneData(name="john", phone="010-1223-0000"))
-//            add(phoneData(name="jenny", phone="010-0000-4342"))
-//
-//            recyclerViewAdapter.datalist = datalist
-//            recyclerViewAdapter.notifyDataSetChanged()
-//        }
-//    }
+
 }
