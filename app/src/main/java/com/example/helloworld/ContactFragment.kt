@@ -6,15 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-
 import com.google.gson.Gson
 import java.io.IOException
-import java.time.temporal.TemporalAdjusters.next
 
 
 class ContactFragment : Fragment(), View.OnClickListener {
@@ -24,6 +20,15 @@ class ContactFragment : Fragment(), View.OnClickListener {
     lateinit var testdata : TelData
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val bundle = this.arguments
+        if (bundle != null) {
+            val image = bundle.getString("image")
+            val name = bundle.getString("name")
+            val phone = bundle.getString("phone")
+            Log.i(name,"번들")
+            Log.i(phone,"번들")
+            Log.i(image,"번들")
+        }
     }
     private fun initRecycler() {
 
