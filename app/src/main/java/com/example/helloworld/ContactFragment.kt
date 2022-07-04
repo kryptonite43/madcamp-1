@@ -20,20 +20,6 @@ class ContactFragment : Fragment(), View.OnClickListener {
     lateinit var testdata : TelData
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        val bundle = this.arguments
-//        if (bundle != null) {
-//            val image = bundle.getString("image")!!
-//            val name = bundle.getString("name")!!
-//            val phone = bundle.getString("phone")!!
-//            Log.i(name,"번들")
-//            Log.i(phone,"번들")
-//            Log.i(image,"번들")
-
- //       }
-    }
-    private fun initRecycler() {
-
-
     }
 
 
@@ -60,13 +46,14 @@ class ContactFragment : Fragment(), View.OnClickListener {
 
         val bundle = this.arguments
         if (bundle != null) {
-            val image = bundle.getString("image")!!
+
             val name = bundle.getString("name")!!
             val phone = bundle.getString("phone")!!
+            val image = bundle.getString("image")!!
             Log.i(name, "번들")
             Log.i(phone, "번들")
             Log.i(image, "번들")
-            testdata.add(phoneData(image, name, phone))
+            testdata.add(phoneData(name, phone, image))
         }
         return inflater.inflate(R.layout.fragment_contact, container, false)
     }
@@ -77,7 +64,7 @@ class ContactFragment : Fragment(), View.OnClickListener {
         recyclerViewAdapter = RecyclerViewAdapter(testdata!!)
         val recview = getView()?.findViewById<RecyclerView>(R.id.recyclerlist)
         val addbutton = getView()?.findViewById<Button>(R.id.addContact)
-        val delbutton = getView()?.findViewById<Button>(R.id.delContact)
+//        val delbutton = getView()?.findViewById<Button>(R.id.delContact)
         recview?.adapter = recyclerViewAdapter
 
         recyclerViewAdapter.setOnItemClickListener(object : RecyclerViewAdapter.OnItemClickListener{
@@ -86,7 +73,7 @@ class ContactFragment : Fragment(), View.OnClickListener {
             }
         })
         addbutton!!.setOnClickListener(this)
-        delbutton!!.setOnClickListener(this)
+//        delbutton!!.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -98,9 +85,9 @@ class ContactFragment : Fragment(), View.OnClickListener {
                 transaction.replace(R.id.fl_con, addFragment)
                 transaction.commit()
             }
-            R.id.delContact -> {
-                Log.i("delContact","온클릭")
-            }
+//            R.id.delContact -> {
+//                Log.i("delContact","온클릭")
+//            }
         }
     }
 

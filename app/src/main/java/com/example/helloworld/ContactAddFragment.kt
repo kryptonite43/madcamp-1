@@ -42,9 +42,10 @@ class ContactAddFragment : Fragment(),View.OnClickListener {
             val fm = activity?.supportFragmentManager
 
             val argument = Bundle()
-            argument.putString("image", newimage)
+
             argument.putString("name", newname)
             argument.putString("phone", newphone)
+            argument.putString("image", newimage)
 //            val bundle = Bundle()
 //            bundle.putString("name", newname)
 //            bundle.putString("name", newname)
