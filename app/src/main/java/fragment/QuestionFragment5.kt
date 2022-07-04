@@ -8,8 +8,9 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.example.cattest.R
-import com.junga.cattest.fragment.Algorithm
+
+import com.example.helloworld.R
+import com.junga.helloworld.fragment.algorithm
 import kotlinx.android.synthetic.main.fragment_question5.*
 
 
@@ -17,7 +18,7 @@ class QuestionFragment5 : Fragment(), View.OnClickListener {
 
     lateinit var navController: NavController
 
-    var tmp = Algorithm(0, 0, 0, 0)
+    var tmp = algorithm(0, 0, 0, 0)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -6,10 +6,15 @@ import android.widget.FrameLayout
 import android.widget.ListView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var navController: NavController
 
     private val fl: FrameLayout by lazy {
         findViewById(R.id.fl_con)
@@ -19,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        navController = navHostFragment.navController
         val bnv_main = findViewById<BottomNavigationView>(R.id.bnv_main)
 
         bnv_main.setOnItemSelectedListener { item ->

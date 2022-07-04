@@ -8,13 +8,14 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.example.cattest.R
-import com.junga.cattest.fragment.Algorithm
+
+import com.example.helloworld.R
+import com.junga.helloworld.fragment.algorithm
 import kotlinx.android.synthetic.main.fragment_question12.*
 
 
 class QuestionFragment12 : Fragment(), View.OnClickListener {
-    var tmp = Algorithm(0,0,0,0)
+    var tmp = algorithm(0,0,0,0)
 
     lateinit var navController: NavController
 
@@ -44,7 +45,7 @@ class QuestionFragment12 : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {
         when(v?.id){
             R.id.btn_next -> {
-                navController.navigate(R.id.action_questionFragment12_to_nickFragment2)
+                navController.navigate(R.id.action_questionFragment12_to_resultFragment)
             }
             R.id.option12_1 -> {
                 tmp.incrementSn()
@@ -61,6 +62,6 @@ class QuestionFragment12 : Fragment(), View.OnClickListener {
 
     fun navigationWithData(data: String){
         val bundle: Bundle = bundleOf("Data" to data)
-        navController.navigate(R.id.action_questionFragment12_to_nickFragment2, bundle)
+        navController.navigate(R.id.action_questionFragment12_to_resultFragment, bundle)
     }
 }

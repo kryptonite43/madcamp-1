@@ -1,4 +1,4 @@
-package fragment
+package com.junga.helloworld.fragment
 
 open class algorithm(eiScore: Int, snScore: Int, tfScore: Int, jpScore: Int) {
     var ei:Int = eiScore

@@ -8,14 +8,15 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.example.cattest.R
-import com.junga.cattest.fragment.Algorithm
+import com.junga.helloworld.fragment.algorithm
+import com.example.helloworld.R
+
 import kotlinx.android.synthetic.main.fragment_question7.*
 
 
 class QuestionFragment7 : Fragment(), View.OnClickListener {
 
-    var tmp = Algorithm(0,0,0,0)
+    var tmp = algorithm(0,0,0,0)
 
     lateinit var navController: NavController
 
