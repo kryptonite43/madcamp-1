@@ -3,39 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/activity_contact_add.xml" value="0.27107887579329104" />
         <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/content_contact_add.xml" value="0.21975203078238564" />
         <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_contact.xml" value="0.2" />
         <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_contact_add.xml" value="0.264" />
         <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_gallery.xml" value="0.14175724637681159" />
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_last.xml" value="0.176" />
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_question1.xml" value="0.30055579307396324" />
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_question10.xml" value="0.30055579307396324" />
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_question11.xml" value="0.30055579307396324" />
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_question12.xml" value="0.30055579307396324" />
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_question2.xml" value="0.30055579307396324" />
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_question3.xml" value="0.30055579307396324" />
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_question4.xml" value="0.30055579307396324" />
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_question5.xml" value="0.30055579307396324" />
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_question6.xml" value="0.30055579307396324" />
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_question7.xml" value="0.30055579307396324" />
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_question8.xml" value="0.30055579307396324" />
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_question9.xml" value="0.30055579307396324" />
-        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_result.xml" value="0.30055579307396324" />
+        <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_last.xml" value="0.14175724637681159" />
         <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/listview_item.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/sonyj/AndroidStudioProjects/HelloWorld/app/src/main/res/menu/menu.xml" value="0.264" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_check_box_outline_blank_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_photo_library_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/radius.xml" value="0.3035" />
+        <entry key="app/src/main/res/layout/activity_gallery_view.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.12056737588652482" />
-        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.146403242147923" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_contact.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_contact_add.xml" value="0.1983695652173913" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_last.xml" value="0.146403242147923" />
+        <entry key="app/src/main/res/layout/fragment_last.xml" value="0.1" />
         <entry key="app/src/main/res/layout/listview_item.xml" value="0.1" />
         <entry key="app/src/main/res/layout/radius.xml" value="0.3" />
         <entry key="app/src/main/res/layout/rv_item.xml" value="0.26856884057971014" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.30104166666666665" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.227" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.227" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/프로듀스 멍멍.xml" value="0.1465" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/프로듀스 멍멍_round.xml" value="0.227" />
       </map>
     </option>
   </component>
